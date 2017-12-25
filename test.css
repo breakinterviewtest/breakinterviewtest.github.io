@@ -1,0 +1,63 @@
+.intern_head{
+	background-color:black;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	height:80px;
+	border-bottom: 5px solid magenta;
+}
+.intern_question{
+	padding-top: 50px;
+}
+.intern_timer{
+	font-size: 15px;
+	color:white;
+}
+#marks1{
+	text-align: right;
+	background-color: red;
+	margin-top: 5px;
+	margin-right: 2px;
+	color:white;
+	border-radius: 10%;
+}
+#marks2{
+	background-color: green;
+	margin-top: 5px;
+	color:white;
+	border-radius: 10%;	
+}
+.intern_ques{
+	margin-left: 40px;
+}
+.row{
+	margin-left:0px!important;
+	margin-right:0px!important;
+}
+#quesno{
+	margin-left: 30px;
+	border-radius: 50%;
+	background-color:grey;
+	margin-top:5px;
+	color:white;
+	border:1px solid grey; 
+}
+.intern_box1{
+	background-color:white;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	border: 0.5px solid grey;
+}
+.intern_body{
+	background-color:#CCFFFF;
+}
+.intern_notice{
+	padding-top: 100px;
+	margin-left: 200px;
+	font-size: 20px;
+	margin-right: 200px;
+}
+.intern_hr{
+	border:1px solid grey;
+	margin-left: 10px;
+	margin-right:10px;
+	}

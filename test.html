@@ -1,0 +1,85 @@
+<html>
+<head>
+	<link rel="stylesheet" href="test.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="test.js"></script>
+
+<script>
+	
+	</script>
+
+
+</head>
+<body class="intern_body" onload="window_on_load()">
+	<div class="container-fluid intern_head">
+		<div class="row">
+			<div class="col-lg-1">
+				<button id ="show" onclick="start(); countDownTimer();" type="button" class="btn btn-primary">
+					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+				</button>
+			</div>
+			<div id="timer" class="intern_timer col-lg-3"></div>
+			<div class="col-lg-7 intern_timer">Prelims free full Test</div>
+			<!--<div class="col-lg-1"><button id ="show" class="start btn btn-primary" onclick="start()">Start</button>-->
+				<button id ="hide" onclick="submit()" class="start btn btn-primary">Submit Test</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="intern_notice" id="notice"><h3>INSTRUCTIONS TO BE FOLLOWED:-</h3><br />
+		1. Click on the <b>PLAY</b> button to start the test.<br />2. Every question has 5 answer, click an option and click <b>SUBMIT ANSWER</b> to submit the choice<br />3. To submit the test click on the <b>SUBMIT TEST</b> button<br />4. Test will be auto submitted if the time completes</div>
+	<div id="question">
+		<div class="container intern_question">
+			<div class="row">
+				<div class="row mar intern_box1">
+					<div class="col-lg-2"><div id="quesno" class="intern_ques1 col-sm-1"></div></div>
+					<div id="tim" class="col-lg-7"></div>
+					<div class="col-lg-3">
+						<div id="marks1" class="col-sm-3 ">-0.25</div><div id="marks2" class="col-sm-3">+1.00</div>
+					</div><br/>
+					<hr class="intern_hr">
+					<p class="intern_ques" id="ans0"></p>
+				</div>
+			</div>
+				<div class="col-lg-12 intern_box1">
+					<div class="radio">
+	      			<label><input type="radio" id="radio1" onclick="change()"  name="optradio" value="1"><p id="ans1"></p></label>
+	    			</div>
+				</div>
+				<div class="col-lg-12 intern_box1">
+					<div class="radio">
+	      			<label><input type="radio" id="radio2" onclick="change()" name="optradio" value="2"><p id="ans2"></p></label>
+	    			</div>
+				</div>
+				<div class="col-lg-12 intern_box1">
+					<div class="radio">
+	      			<label><input type="radio" id="radio3" onclick="change()" name="optradio" value="3"><p id="ans3"></p></label>
+	    			</div>
+				</div>
+				<div class="col-lg-12 intern_box1">
+					<div class="radio">
+	      			<label><input type="radio" id="radio4" onclick="change()" name="optradio" value="4"><p id="ans4"></p></label>
+	    			</div>
+				</div>
+				<div class="col-lg-12 intern_box1">
+					<div class="radio">
+	      			<label><input type="radio" id="radio5" onclick="change()" name="optradio" value="5"><p id="ans5"></p></label>
+	    			</div>
+			</div>
+		</div>
+	
+		<center><br />
+		<button type="button" onclick="previous()" class="btn btn-primary">Previous</button>
+		<button type="button" onclick="next()" class="btn btn-primary">Next</button>
+		</center>
+		<center>
+			<br />
+		<button type="button" id="anssub" onclick="sub()" class="btn btn-primary">Submit Answer</button>
+		</center>
+	</div>
+	<!--<button id="hide">Hide</button>
+	<button id="show">Show</button>-->
+</body>
+</html>
